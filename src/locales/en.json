@@ -1,0 +1,165 @@
+{
+  "home": {
+    "hero": {
+      "title": "Exploring Form Through Color",
+      "description": "Contemporary abstract paintings that investigate the relationship between emotion, color, and spatial awareness.",
+      "cta": "View Exhibitions",
+      "imageAlt": "Abstract painting"
+    },
+    "featured": {
+      "title": "Featured Works"
+    },
+    "works": {
+      "0": {
+        "title": "Chromatic Horizon",
+        "year": "2026",
+        "medium": "Oil on canvas"
+      },
+      "1": {
+        "title": "Urban Fragments",
+        "year": "2025",
+        "medium": "Acrylic on canvas"
+      },
+      "2": { "title": "Silent Spaces", "year": "2025", "medium": "Mixed media" }
+    }
+  },
+  "about": {
+    "title": "About the Nkarich",
+    "imageAlt": "Artist studio",
+    "imageCaption": "In the studio, 2026",
+    "bio": {
+      "0": "Nkarich is a contemporary abstract painter based in Tashkent, Uzbekistan. Her work explores the intersection of color theory, emotional resonance, and spatial relationships through bold, expressive compositions.",
+      "1": "Born in 1997, Nkarich received her Bachelor's degree from the National Institute of Painting and Design named after Kamoliddin Behzod in 2020. Her practice is rooted in the belief that abstract forms can communicate universal human experiences beyond the constraints of representational imagery.",
+      "2": "Her paintings have been exhibited internationally in galleries across Tashkent, Almaty, Moscow, Saint-Petersbourg and many more. Nkarich's work is held in several private collections and has been featured in numerous art publications."
+    },
+    "education": {
+      "label": "Education",
+      "ba": "BA of Art, Kamoliddin Bekhzod Institute (2018)",
+      "ma": "MA of Art, Kamoliddin Bekhzod Institute (2020)"
+    },
+    "recognition": {
+      "label": "Recognition",
+      "0": "Pollock-Krasner Foundation Grant (2022)",
+      "1": "New York Foundation for the Arts Fellowship (2019)",
+      "2": "Emerging Artist Award, Contemporary Art Fair (2015)"
+    }
+  },
+  "nav": {
+    "brand": "Nkarich Studio",
+    "home": "Home",
+    "about": "About",
+    "exhibitions": "Exhibitions",
+    "blog": "Blog",
+    "contacts": "Contacts",
+    "language": "Language",
+    "footer": "© 2026 Nkarich Studio. All rights reserved.",
+    "footerSub": "Contemporary Artist & Painter"
+  },
+  "exhibitions": {
+    "title": "Exhibitions",
+    "subtitle": "Selected solo and group exhibitions",
+    "currentLabel": "Current",
+    "items": {
+      "0": {
+        "title": "Monochrome Dreams",
+        "type": "Solo Exhibition",
+        "venue": "Gallery Modern, New York",
+        "date": "March - May 2026",
+        "status": "Current"
+      },
+      "1": {
+        "title": "Fragmented Realities",
+        "type": "Group Exhibition",
+        "venue": "Contemporary Art Space, Berlin",
+        "date": "November 2025 - January 2026",
+        "status": "Past"
+      },
+      "2": {
+        "title": "Color Theory",
+        "type": "Solo Exhibition",
+        "venue": "Whitespace Gallery, London",
+        "date": "June - August 2025",
+        "status": "Past"
+      },
+      "3": {
+        "title": "Between Lines",
+        "type": "Group Exhibition",
+        "venue": "Tokyo Art Fair",
+        "date": "March 2025",
+        "status": "Past"
+      },
+      "4": {
+        "title": "Silence and Space",
+        "type": "Solo Exhibition",
+        "venue": "Mitchell Contemporary, New York",
+        "date": "September - November 2024",
+        "status": "Past"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts on art, process, and inspiration",
+    "readMore": "Read More →",
+    "posts": {
+      "0": {
+        "title": "On the Nature of Color",
+        "date": "March 2, 2026",
+        "category": "Theory",
+        "excerpt": "Exploring how color functions as both a physical phenomenon and an emotional language in abstract painting."
+      },
+      "1": {
+        "title": "Studio Notes: Working with Large Canvases",
+        "date": "February 15, 2026",
+        "category": "Process",
+        "excerpt": "Reflections on the physical and conceptual challenges of scaling up, and how size transforms the viewer's relationship to the work."
+      },
+      "2": {
+        "title": "Minimalism and Maximalism",
+        "date": "January 28, 2026",
+        "category": "Philosophy",
+        "excerpt": "Finding the balance between restraint and abundance, and why both approaches are essential to my practice."
+      },
+      "3": {
+        "title": "Inspiration: The Light of Winter",
+        "date": "January 10, 2026",
+        "category": "Inspiration",
+        "excerpt": "How the unique quality of winter light in New York has influenced my recent color choices and compositional decisions."
+      },
+      "4": {
+        "title": "The Role of Intuition",
+        "date": "December 20, 2025",
+        "category": "Process",
+        "excerpt": "Why I've learned to trust spontaneous decisions in the studio and the importance of letting go of control."
+      },
+      "5": {
+        "title": "Visiting the Rothko Chapel",
+        "date": "November 30, 2025",
+        "category": "Reflection",
+        "excerpt": "Thoughts on experiencing Mark Rothko's late work in Houston and its profound impact on my understanding of space and silence."
+      }
+    }
+  },
+  "contacts": {
+    "title": "Contact",
+    "form": {
+      "heading": "Get in Touch",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "locationLabel": "Studio Location",
+      "address": {
+        "0": "Shota Rustaveli str.",
+        "1": "Building 77, Studio 312",
+        "2": "Tashkent",
+        "3": "Uzbekistan"
+      },
+      "emailLabel": "Email",
+      "followLabel": "Follow"
+    }
+  }
+}
