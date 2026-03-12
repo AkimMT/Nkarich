@@ -167,8 +167,24 @@ export function Layout() {
       <footer className="border-t border-gray-200 mt-32">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-            <p>{t("nav.footer")}</p>
-            <p>{t("nav.footerSub")}</p>
+            <div className="flex flex-col gap-2">
+              <p>{t("nav.footerSub")}</p>
+              <p>{t("nav.footer")}</p>
+            </div>
+            <div className="flex flex-col gap-2 items-end">
+              {/* <p>{t("nav.footerNew")}</p> */}
+              <p>
+                {t("nav.madeBy")}{" "}
+                <a
+                  href="https://webrunners.lt"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-black transition-colors underline"
+                >
+                  webrunners.lt
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </footer>

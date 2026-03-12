@@ -101,10 +101,10 @@ export function Contacts() {
               {t("contacts.info.emailLabel")}
             </h3>
             <a
-              href="mailto:info@nkarich.uz"
+              href="mailto:laziza9765@gmail.com"
               className="text-gray-600 hover:text-black transition-colors"
             >
-              info@nkarich.uz
+              laziza9765@gmail.com
             </a>
           </div>
 
@@ -114,12 +114,14 @@ export function Contacts() {
             </h3>
             <div className="space-y-2">
               <a
+                target="_blank"
                 href="https://www.instagram.com/nkarich_"
                 className="block text-gray-600 hover:text-black transition-colors"
               >
                 Instagram
               </a>
               <a
+                target="_blank"
                 href="https://t.me/nkarich"
                 className="block text-gray-600 hover:text-black transition-colors"
               >

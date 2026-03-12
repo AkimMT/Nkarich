@@ -53,7 +53,9 @@
     "contacts": "Contacts",
     "language": "Language",
     "footer": "© 2026 Nkarich Studio. All rights reserved.",
-    "footerSub": "Contemporary Artist & Painter"
+    "footerNew": "Made by webrunners.lt",
+    "madeBy": "Made by ",
+    "footerSub": "Contemporary Artist & Painter."
   },
   "exhibitions": {
     "title": "Exhibitions",

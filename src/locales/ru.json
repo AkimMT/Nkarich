@@ -57,7 +57,9 @@
     "contacts": "Контакты",
     "language": "Язык",
     "footer": "© 2026 Студия Nkarich. Все права защищены.",
-    "footerSub": "Современный художник и живописец"
+    "footerNew": "Разработал webrunners.lt",
+    "madeBy": "Разработал ",
+    "footerSub": "Современный художник и живописец."
   },
   "exhibitions": {
     "title": "Выставки",
