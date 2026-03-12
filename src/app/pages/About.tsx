@@ -47,7 +47,8 @@ export function About() {
         <div className="space-y-8">
           <div className="aspect-[3/4]">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1628586431263-44040b966252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpc3QlMjBzdHVkaW8lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzczMDM3OTEzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+              // src="https://images.unsplash.com/photo-1628586431263-44040b966252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpc3QlMjBzdHVkaW8lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzczMDM3OTEzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="artist.jpg"
               alt={t("about.imageAlt")}
               className="w-full h-full object-cover"
             />

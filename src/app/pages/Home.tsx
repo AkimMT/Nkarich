@@ -10,22 +10,19 @@ export function Home() {
       title: t("home.works.0.title"),
       year: t("home.works.0.year"),
       medium: t("home.works.0.medium"),
-      image:
-        "https://images.unsplash.com/photo-1580136608079-72029d0de130?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250ZW1wb3JhcnklMjBwYWludGluZyUyMGFydHdvcmt8ZW58MXx8fHwxNzczMDUxMjA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/chess.jpg",
     },
     {
       title: t("home.works.1.title"),
       year: t("home.works.1.year"),
       medium: t("home.works.1.medium"),
-      image:
-        "https://images.unsplash.com/photo-1705254613735-1abb457f8a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMGFic3RyYWN0JTIwYXJ0fGVufDF8fHx8MTc3Mjk2NjQ2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/green_girl.jpg",
     },
     {
       title: t("home.works.2.title"),
       year: t("home.works.2.year"),
       medium: t("home.works.2.medium"),
-      image:
-        "https://images.unsplash.com/photo-1580136607993-fd598cf5c4f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcGFpbnRpbmd8ZW58MXx8fHwxNzczMDUxMjA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/lady_in_red.jpg",
     },
   ];
 
@@ -50,7 +47,8 @@ export function Home() {
           </div>
           <div className="aspect-square">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1635141849017-c531949fb5b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHBhaW50aW5nJTIwY2FudmFzfGVufDF8fHx8MTc3MzAzNzkxMXww&ixlib=rb-4.1.0&q=80&w=1080"
+              // src="https://images.unsplash.com/photo-1635141849017-c531949fb5b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHBhaW50aW5nJTIwY2FudmFzfGVufDF8fHx8MTc3MzAzNzkxMXww&ixlib=rb-4.1.0&q=80&w=1080"
+              src="/wall_mix.jpg"
               alt={t("home.hero.imageAlt")}
               className="w-full h-full object-cover"
             />
