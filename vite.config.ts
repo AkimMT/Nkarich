@@ -19,6 +19,10 @@ export default defineConfig({
       "styled-components",
       "react-compiler-runtime",
     ],
-    force: true,
+  },
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
   },
 });
