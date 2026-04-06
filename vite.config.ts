@@ -23,12 +23,7 @@ export default defineConfig({
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
-    },
-    rollupOptions: {
-      external: (id) => {
-        if (id.includes("cjs/react-dom-client.production")) return true;
-        return false;
-      },
+      ignore: (id) => id.includes("cjs/react"),
     },
   },
 });
