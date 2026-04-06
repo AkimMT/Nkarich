@@ -9,7 +9,10 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
       "react/compiler-runtime": "react-compiler-runtime",
+      "react/jsx-runtime": "react/jsx-runtime",
+      "react/jsx-dev-runtime": "react/jsx-dev-runtime",
     },
+    conditions: ["module", "browser", "development|production"],
     dedupe: ["react", "react-dom", "react-router"],
   },
   optimizeDeps: {
