@@ -25,5 +25,10 @@ export default defineConfig({
       transformMixedEsModules: true,
       ignore: (id) => id.includes("cjs/react"),
     },
+    rollupOptions: {
+      output: {
+        format: "es",
+      },
+    },
   },
 });
