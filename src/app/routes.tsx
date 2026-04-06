@@ -9,6 +9,10 @@ import { StudioPage } from "./pages/Studio";
 
 export const router = createBrowserRouter([
   {
+    path: "/studio",
+    Component: StudioPage,
+  },
+  {
     path: "/studio/*",
     Component: StudioPage,
   },
