@@ -26,7 +26,7 @@ export default defineConfig({
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
-      ignore: (id) => id.includes("cjs/react"),
+      include: [/node_modules/],
     },
     rollupOptions: {
       output: {
