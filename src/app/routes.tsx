@@ -5,8 +5,13 @@ import { About } from "./pages/About";
 import { Exhibitions } from "./pages/Exhibitions";
 import { Contacts } from "./pages/Contacts";
 import { Blog } from "./pages/Blog";
+import { StudioPage } from "./pages/Studio";
 
 export const router = createBrowserRouter([
+  {
+    path: "/studio/*",
+    Component: StudioPage,
+  },
   {
     path: "/",
     Component: Layout,
