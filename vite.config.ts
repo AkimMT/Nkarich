@@ -24,6 +24,7 @@ export default defineConfig({
     ],
   },
   build: {
+    chunkSizeWarningLimit: 6000,
     commonjsOptions: {
       transformMixedEsModules: true,
       include: [/node_modules/],
@@ -31,6 +32,11 @@ export default defineConfig({
     rollupOptions: {
       output: {
         format: "es",
+        manualChunks: {
+          "react-vendor": ["react", "react-dom", "react-router"],
+          "sanity-vendor": ["sanity", "@sanity/client", "@sanity/image-url"],
+          "ui-vendor": ["styled-components", "lucide-react"],
+        },
       },
     },
   },
