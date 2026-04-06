@@ -2,18 +2,16 @@ import { createRoot } from "react-dom/client";
 import "./styles/index.css";
 import "./i18n";
 
-const isStudio = window.location.pathname.startsWith("/studio");
+const root = createRoot(document.getElementById("root")!);
 
-if (isStudio) {
-  import("sanity").then(({ Studio }) => {
-    import("../sanity.config.js").then(({ default: config }) => {
-      createRoot(document.getElementById("root")!).render(
-        <Studio config={config} />,
-      );
-    });
-  });
+if (window.location.pathname.startsWith("/studio")) {
+  Promise.all([import("sanity"), import("../sanity.config.js")]).then(
+    ([{ Studio }, { default: config }]) => {
+      root.render(<Studio config={config} />);
+    },
+  );
 } else {
   import("./app/App.tsx").then(({ default: App }) => {
-    createRoot(document.getElementById("root")!).render(<App />);
+    root.render(<App />);
   });
 }
