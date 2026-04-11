@@ -49,8 +49,6 @@
     "home": "Home",
     "about": "About",
     "exhibitions": "Exhibitions",
-    "blog": "Blog",
-    "contacts": "Contacts",
     "language": "Language",
     "footer": "© 2026 Nkarich Studio. All rights reserved.",
     "footerNew": "Made by webrunners.lt",
@@ -99,69 +97,16 @@
       }
     }
   },
-  "blog": {
-    "title": "Blog",
-    "subtitle": "Thoughts on art, process, and inspiration",
-    "readMore": "Read More →",
-    "posts": {
-      "0": {
-        "title": "On the Nature of Color",
-        "date": "March 2, 2026",
-        "category": "Theory",
-        "excerpt": "Exploring how color functions as both a physical phenomenon and an emotional language in abstract painting."
-      },
-      "1": {
-        "title": "Studio Notes: Working with Large Canvases",
-        "date": "February 15, 2026",
-        "category": "Process",
-        "excerpt": "Reflections on the physical and conceptual challenges of scaling up, and how size transforms the viewer's relationship to the work."
-      },
-      "2": {
-        "title": "Minimalism and Maximalism",
-        "date": "January 28, 2026",
-        "category": "Philosophy",
-        "excerpt": "Finding the balance between restraint and abundance, and why both approaches are essential to my practice."
-      },
-      "3": {
-        "title": "Inspiration: The Light of Winter",
-        "date": "January 10, 2026",
-        "category": "Inspiration",
-        "excerpt": "How the unique quality of winter light in New York has influenced my recent color choices and compositional decisions."
-      },
-      "4": {
-        "title": "The Role of Intuition",
-        "date": "December 20, 2025",
-        "category": "Process",
-        "excerpt": "Why I've learned to trust spontaneous decisions in the studio and the importance of letting go of control."
-      },
-      "5": {
-        "title": "Visiting the Rothko Chapel",
-        "date": "November 30, 2025",
-        "category": "Reflection",
-        "excerpt": "Thoughts on experiencing Mark Rothko's late work in Houston and its profound impact on my understanding of space and silence."
-      }
-    }
-  },
-  "contacts": {
-    "title": "Contact",
-    "form": {
-      "heading": "Get in Touch",
-      "name": "Name",
-      "email": "Email",
-      "subject": "Subject",
-      "message": "Message",
-      "submit": "Send Message"
+
+  "info": {
+    "locationLabel": "Studio Location",
+    "address": {
+      "0": "Shota Rustaveli str.",
+      "1": "Building 77, Studio 312",
+      "2": "Tashkent",
+      "3": "Uzbekistan"
     },
-    "info": {
-      "locationLabel": "Studio Location",
-      "address": {
-        "0": "Shota Rustaveli str.",
-        "1": "Building 77, Studio 312",
-        "2": "Tashkent",
-        "3": "Uzbekistan"
-      },
-      "emailLabel": "Email",
-      "followLabel": "Follow"
-    }
+    "emailLabel": "Email",
+    "followLabel": "Follow"
   }
 }

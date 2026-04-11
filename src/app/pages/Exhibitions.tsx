@@ -1,18 +1,48 @@
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
+import { client, urlFor } from "../../sanity/schemas/client";
+import i18n from "i18next";
+
+interface SanityExhibition {
+  _id: string;
+  title_ru: string;
+  title_en?: string;
+  date: string;
+  location?: string;
+  images?: any[];
+}
+
+function localized(doc: SanityExhibition, field: string): string {
+  const lang = i18n.language?.startsWith("ru") ? "ru" : "en";
+  return (doc as any)[`${field}_${lang}`] || (doc as any)[`${field}_ru`] || "";
+}
 
 export function Exhibitions() {
   const { t } = useTranslation();
+  const [sanityExhibitions, setSanityExhibitions] = useState<
+    SanityExhibition[]
+  >([]);
 
-  const exhibitions = [
+  useEffect(() => {
+    client
+      .fetch<SanityExhibition[]>(
+        `*[_type == "exhibition"] | order(date desc) {
+          _id, title_ru, title_en, date, location, images
+        }`,
+      )
+      .then(setSanityExhibitions)
+      .catch(console.error);
+  }, []);
+
+  const staticExhibitions = [
     {
       title: t("exhibitions.items.0.title"),
       type: t("exhibitions.items.0.type"),
       venue: t("exhibitions.items.0.venue"),
       date: t("exhibitions.items.0.date"),
       status: t("exhibitions.items.0.status"),
-      image:
-        "https://images.unsplash.com/photo-1723974591057-ccadada1f283?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcnQlMjBnYWxsZXJ5fGVufDF8fHx8MTc3MzAyMDEyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "exh1.webp",
     },
     {
       title: t("exhibitions.items.1.title"),
@@ -20,8 +50,7 @@ export function Exhibitions() {
       venue: t("exhibitions.items.1.venue"),
       date: t("exhibitions.items.1.date"),
       status: t("exhibitions.items.1.status"),
-      image:
-        "https://images.unsplash.com/photo-1635141849017-c531949fb5b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHBhaW50aW5nJTIwY2FudmFzfGVufDF8fHx8MTc3MzAzNzkxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "exh2.webp",
     },
     {
       title: t("exhibitions.items.2.title"),
@@ -29,8 +58,7 @@ export function Exhibitions() {
       venue: t("exhibitions.items.2.venue"),
       date: t("exhibitions.items.2.date"),
       status: t("exhibitions.items.2.status"),
-      image:
-        "https://images.unsplash.com/photo-1705254613735-1abb457f8a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMGFic3RyYWN0JTIwYXJ0fGVufDF8fHx8MTc3Mjk2NjQ2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "exh3.webp",
     },
     {
       title: t("exhibitions.items.3.title"),
@@ -38,8 +66,7 @@ export function Exhibitions() {
       venue: t("exhibitions.items.3.venue"),
       date: t("exhibitions.items.3.date"),
       status: t("exhibitions.items.3.status"),
-      image:
-        "https://images.unsplash.com/photo-1580136608079-72029d0de130?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250ZW1wb3JhcnklMjBwYWludGluZyUyMGFydHdvcmt8ZW58MXx8fHwxNzczMDUxMjA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "exh4.webp",
     },
     {
       title: t("exhibitions.items.4.title"),
@@ -47,10 +74,22 @@ export function Exhibitions() {
       venue: t("exhibitions.items.4.venue"),
       date: t("exhibitions.items.4.date"),
       status: t("exhibitions.items.4.status"),
-      image:
-        "https://images.unsplash.com/photo-1580136607993-fd598cf5c4f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcGFpbnRpbmd8ZW58MXx8fHwxNzczMDUxMjA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "exh5.webp",
     },
   ];
+
+  const usingSanity = sanityExhibitions.length > 0;
+
+  const exhibitions = usingSanity
+    ? sanityExhibitions.map((ex) => ({
+        title: localized(ex, "title"),
+        type: "",
+        venue: ex.location || "",
+        date: ex.date,
+        status: "",
+        image: ex.images?.[0] ? urlFor(ex.images[0]).width(1080).url() : "",
+      }))
+    : staticExhibitions;
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">

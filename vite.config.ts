@@ -12,8 +12,7 @@ export default defineConfig({
       "react/jsx-runtime": "react/jsx-runtime",
       "react/jsx-dev-runtime": "react/jsx-dev-runtime",
     },
-    conditions: ["module", "browser", "development|production"],
-    dedupe: ["react", "react-dom", "react-router"],
+    dedupe: ["react", "react-dom", "react-router", "styled-components"],
   },
   optimizeDeps: {
     include: [
@@ -25,7 +24,6 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 6000,
-
     commonjsOptions: {
       transformMixedEsModules: true,
       include: [/node_modules/],

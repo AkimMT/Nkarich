@@ -10,19 +10,19 @@ export function Home() {
       title: t("home.works.0.title"),
       year: t("home.works.0.year"),
       medium: t("home.works.0.medium"),
-      image: "/chess.jpg",
+      image: "/chess.webp",
     },
     {
       title: t("home.works.1.title"),
       year: t("home.works.1.year"),
       medium: t("home.works.1.medium"),
-      image: "/green_girl.jpg",
+      image: "/green_girl.webp",
     },
     {
       title: t("home.works.2.title"),
       year: t("home.works.2.year"),
       medium: t("home.works.2.medium"),
-      image: "/lady_in_red.jpg",
+      image: "/lady_in_red.webp",
     },
   ];
 
@@ -47,8 +47,7 @@ export function Home() {
           </div>
           <div className="aspect-square">
             <ImageWithFallback
-              // src="https://images.unsplash.com/photo-1635141849017-c531949fb5b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHBhaW50aW5nJTIwY2FudmFzfGVufDF8fHx8MTc3MzAzNzkxMXww&ixlib=rb-4.1.0&q=80&w=1080"
-              src="/wall_mix.jpg"
+              src="/wall_mix.webp"
               alt={t("home.hero.imageAlt")}
               className="w-full h-full object-cover"
             />
